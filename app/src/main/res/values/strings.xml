@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Spk Pemilihan Smartphone</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <array name="list_harga">
+        <item>Pilih harga</item>
+        <item>1 Juta - 2 Juta</item>
+        <item>2 Juta - 3 Juta</item>
+        <item>3 Juta - 4 Juta</item>
+        <item>4 Juta Keatas</item>
+
+    </array>
+    <array name="list_ram">
+        <item>Pilih Ram</item>
+        <item>1Gb</item>
+        <item>2Gb</item>
+        <item>3Gb</item>
+        <item>4Gb</item>
+    </array>
+    <array name="list_kamera">
+        <item>Pilih Kamera</item>
+        <item>5 Megapixel</item>
+        <item>8 Megapixel</item>
+        <item>12 Megapixel Keatas</item>
+    </array>
+    <string name="title_activity_about">ABOUT</string>
+</resources>

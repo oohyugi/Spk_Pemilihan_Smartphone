@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context="com.spk.starks.spkpemilihansmartphone.AboutActivity">
+
+   <include layout="@layout/app_bar"
+       android:id="@+id/toolbar">
+
+       </include>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/primaryColorDark"
+        android:layout_below="@+id/toolbar">
+        <TextView
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="ANGGOTA KELOMPOK :"
+            android:id="@+id/textView"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+           android:layout_marginRight="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/textView"
+            android:background="#004D40"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YOGI PUTRA"
+                android:id="@+id/textView2" />
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MARDIANA"
+                android:id="@+id/textView3" />
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YOGA RIANDA"
+                android:id="@+id/textView4" />
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BIMA"
+                android:id="@+id/textView5" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

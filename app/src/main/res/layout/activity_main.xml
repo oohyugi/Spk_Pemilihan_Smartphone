@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColorDark"
+    tools:context=".MainActivity"
+   >
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar">
+
+    </include>
+
+
+    <RelativeLayout
+
+
+
+        android:id="@+id/ln1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+
+
+
+       >
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp">
+
+        <TextView
+
+            android:id="@+id/tvbudget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Budget"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+
+            />
+
+        <Spinner
+            android:padding="5dp"
+
+            android:id="@+id/spBudget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:entries="@array/list_harga"/>
+
+        <TextView
+            android:id="@+id/tvRam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spBudget"
+            android:text="Ram "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:padding="5dp"
+            android:id="@+id/spRam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spBudget"
+            android:layout_toRightOf="@+id/tvKamera"
+            android:layout_weight="1"
+            android:entries="@array/list_ram"/>
+
+        <TextView
+            android:id="@+id/tvKamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spRam"
+            android:text="Kamera"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:padding="5dp"
+
+            android:id="@+id/spKamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spRam"
+            android:layout_toRightOf="@id/tvKamera"
+            android:layout_weight="1"
+            android:entries="@array/list_kamera"/>
+
+
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/btnCari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/ln1"
+        android:text="Cari"
+       />
+
+</LinearLayout>
+    </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
